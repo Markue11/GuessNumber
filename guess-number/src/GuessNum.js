@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, TextField, Button, Typography } from '@mui/material';
 
-function App() {
+function GuessNum() {
   const [randomNumber] = useState(Math.floor(Math.random() * 10) + 1);
   const [guess, setGuess] = useState('');
   const [message, setMessage] = useState('');
@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <Container style={{ marginTop: '50px' }}>
+    <Container>
       <Typography variant="h4" gutterBottom>
         Guess the Number (1-10)
       </Typography>
@@ -31,16 +31,15 @@ function App() {
         onChange={(e) => setGuess(e.target.value)}
         type="number"
         inputProps={{ min: 1, max: 10 }}
-        style={{ marginBottom: '20px' }}
       />
       <Button variant="contained" onClick={handleGuess}>
         Guess
       </Button>
-      <Typography variant="h6" color="primary" style={{ marginTop: '20px' }}>
+      <Typography variant="h6" color="primary">
         {message}
       </Typography>
     </Container>
   );
 }
 
-export default App;
+export default GuessNum;
