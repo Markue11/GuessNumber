@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './App.css'; // Ensure this line is present
+
 import { Container, TextField, Button, Typography } from '@mui/material';
 
 function App() {

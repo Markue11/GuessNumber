@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px; /* Add some padding around the app */
+  color: #ecf0f1; /* Light text color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  padding: 30px;
+  max-width: 400px; /* Set a maximum width */
+  margin: auto; /* Center the container */
+  text-align: center; /* Center text within the container */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h4 {
+  font-size: 2rem; /* Larger heading size */
+  font-weight: 600; /* Bold font weight */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #2c3e50; /* Darker color for contrast */
+}
+
+.textField {
+  margin-bottom: 20px; /* Space below text field */
+  width: 100%; /* Full width */
+}
+
+.button {
+  background-color: #3f51b5; /* Primary button color */
+  color: white; /* Text color for button */
+  font-weight: bold; /* Bold font weight */
+  margin-top: 10px; /* Space above button */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.button:hover {
+  background-color: #303f9f; /* Darker color on hover */
+}
+
+h6 {
+  margin-top: 20px; /* Space above the message */
+  font-size: 1.2rem; /* Slightly larger message font */
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px; /* Adjust padding for smaller screens */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  h4 {
+    font-size: 1.5rem; /* Smaller heading size for mobile */
   }
 }
